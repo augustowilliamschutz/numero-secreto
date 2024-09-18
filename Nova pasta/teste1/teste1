@@ -1,0 +1,37 @@
+alert ("bem vindo ao jogo do numero secreto. seu ze ruela");
+let numerosecreto = parseInt(Math.random() * 1000 + 1)
+console.log(numerosecreto);  
+let chute;
+console.log(chute);
+let tentativas = 1;
+console.log(tentativas);
+let palavratentativa = tentativas > 1 ? 'tentativas' : 'tentativa'
+
+//while enquanto nao acertar o numero secreto continue perguntando
+while (chute != numerosecreto) { 
+    chute = prompt ('Escolha um numero entre 1 e 1000.');
+     if (chute == numerosecreto) {
+        alert (`Isso ai! Você descobriu o numero secreto ${numerosecreto} com ${tentativas} ${palavratentativa}.`);}
+     else {
+     if (chute > numerosecreto) {
+        alert (`O numero secreto é menor que  ${chute}.`); }
+     else { 
+        alert (`O numero secreto é maior que o ${chute}.`);
+        }
+        tentativas++
+    }
+}
+
+
+console.log ("Bem vindo ao nosso programa!")
+// Atribuindo o valor do seu nome à variável "nome"
+let nome = "AUGUSTO";
+let linguagem = "javascript"
+
+// Exibindo a mensagem no console do navegador
+console.log("Olá, " + nome + "!");
+alert ("OLA AUGUSTO , BEM VINDO!")
+let resposta = prompt("QUAL SUA LINGUAGEM DE PROGRAMACAO FAVORITA?")
+if (resposta == linguagem) alert ("ESSA É A MELHOR DE TODAS ! PARABENS");
+else alert ("voce nao sabe de bosta nenhuma seu  merda ") 
+
